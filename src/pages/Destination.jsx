@@ -16,13 +16,26 @@ const Destination = () => {
               <img src={selectedDestination.images.png} alt={selectedDestination.name} />
             </div>
             <div>
-              <nav>
-                <li onClick={()=>setCurrDestination("Moon")}>Moon</li>
-                <li onClick={()=>setCurrDestination("Mars")}>Mars</li>
-                <li onClick={()=>setCurrDestination("Europa")}>Europa</li>
-                <li  onClick={()=>setCurrDestination("Titan")}>Titan</li>
+              <nav className="flex ">
+                <li className="list-none mx-5" onClick={()=>setCurrDestination("Moon")}>Moon</li>
+                <li className="list-none mx-5" onClick={()=>setCurrDestination("Mars")}>Mars</li>
+                <li className="list-none mx-5" onClick={()=>setCurrDestination("Europa")}>Europa</li>
+                <li className="list-none mx-5"  onClick={()=>setCurrDestination("Titan")}>Titan</li>
               </nav>
-              
+              <div>
+                <h2>{selectedDestination.name}</h2>
+                <p>{selectedDestination.description}</p>
+                <div>
+                  <div>
+                  <p className="uppercase">avg. distance</p>
+                  <p>{selectedDestination.distance}</p>
+                </div>
+                <div>
+                  <p className="uppercase">est. travel time</p>
+                  <p>{selectedDestination.travel}</p>
+                </div>
+                </div>
+              </div>
             </div>
           </section>
         </main>
