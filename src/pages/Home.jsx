@@ -1,24 +1,26 @@
 const Home = () => {
   return (
     <div
-      className='bg-[url(/src/assets/home/background-home-mobile.jpg)] sm:bg-[url(/src/assets/home/background-home-tablet.jpg)] lg:bg-[url(/src/assets/home/background-home-desktop.jpg)] bg-fixed bg-no-repeat bg-cover min-h-screen w-full '>
-      <main className="container">
-        <section>
-          <div>
-            <h1>
+      className='bg-[url(/src/assets/home/background-home-mobile.jpg)] sm:bg-[url(/src/assets/home/background-home-tablet.jpg)] lg:bg-[url(/src/assets/home/background-home-desktop.jpg)] bg-fixed bg-no-repeat bg-cover min-h-screen w-full'
+      aria-hidden="true"
+      >
+      <main className="container flex justify-center items-center lg:items-baseline-last max-w-1000">
+        <section className="flex flex-col lg:flex-row lg:justify-between items-center text-lightblue w-full">
+          <div className="mb-100 text-center lg:text-left">
+            <h1 className="font-barlow-condensed text-md md:text-lg uppercase tracking-[2px] sm:tracking-[4px] font-light mb-20">
               So, you want to travel to
             </h1>
-            <h1>
+            <h2 className="text-white text-3xl md:text-4xl  font-bellefair uppercase ">
               Space
-            </h1>
-            <p>
+            </h2>
+            <p className="mt-30 text-sm leading-relaxed font-barlow max-w-500">
               Let’s face it; if you want to go to space, you might as well genuinely go to
               outer space and not hover kind of on the edge of it. Well sit back, and relax
               because we’ll give you a truly out of this world experience!
             </p>
           </div>
-          <div>
-            <button>
+          <div className="flex justify-center items-center">
+            <button className="bg-white hover:ring-70 ring-white/30 rounded-full w-144 h-144 md:w-272 md:h-272 text-lg md:text-2xl hover:text-lightblue cursor-pointer transition-all ease-in-out delay-75 font-bellefair text-darkblue">
               Explore
             </button>
           </div>

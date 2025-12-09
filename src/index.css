@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-*: initial;
   --color-lightblue: #d0d6f9;
   --color-darkblue: #0b0d17;
   --color-white: #ffffff;
@@ -14,13 +13,13 @@
   --font-barlow-condensed: "Barlow Condensed", sans-serif;
   --font-barlow: "Barlow", sans-serif;
 
-  --text-4xl: 9.375rem;
+  --text-4xl: 9rem;
   --text-3xl: 6.25rem;
   --text-2xl: 3.5rem;
   --text-xl: 2rem;
   --text-lg: 1.75rem;
-  --text-md: 1.125rem;
-  --text-s: 1rem;
+  --text-md: 1.425rem;
+  --text-sm: 1.125rem;
   --text-xs: 0.875rem;
 }
 
@@ -41,6 +40,6 @@
 
 @layer components{
   .container{
-    @apply max-w-1100 mx-auto
+    @apply max-w-1200 mx-auto min-h-screen p-24
   }
 }
