@@ -36,6 +36,12 @@
   picutre {
     @apply block max-w-full
   }
+  h1{
+    @apply font-barlow-condensed uppercase font-light tracking-[2px] sm:tracking-[4px] text-md md:text-lg
+  }
+  h2{
+    @apply font-bellefair uppercase text-white
+  }
 }
 
 @layer components{
