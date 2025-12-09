@@ -2,7 +2,7 @@ import { useState } from "react"
 import data from "/src/data/data.json"
 
 const Destination = () => {
-  const [currDestination, setCurrDestination] = useState('moon');
+  const [currDestination, setCurrDestination] = useState('Moon');
   const destinations = data.destinations;
   return (
     <div className='bg-[url(/src/assets/destination/background-destination-mobile.jpg)] sm:bg-[url(/src/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/src/assets/destination/background-destination-desktop.jpg)] bg-fixed bg-no-repeat bg-cover min-h-screen w-full'
@@ -13,7 +13,7 @@ const Destination = () => {
           <section className="flex justify-between items-baseline">
             <div>
               {
-                destinations.map((destination, index) => (
+                destinations.filter(destination=>destination.name===currDestination).map((destination, index) => (
                   <img key={index} src={destination.images.png} />
                 ))
               }
