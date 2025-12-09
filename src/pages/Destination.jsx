@@ -4,6 +4,7 @@ import data from "/src/data/data.json"
 const Destination = () => {
   const [currDestination, setCurrDestination] = useState('Moon');
   const destinations = data.destinations;
+  const selectedDestination = destinations.find(destination=>destination.name===currDestination);
   return (
     <div className='bg-[url(/src/assets/destination/background-destination-mobile.jpg)] sm:bg-[url(/src/assets/destination/background-destination-tablet.jpg)] lg:bg-[url(/src/assets/destination/background-destination-desktop.jpg)] bg-fixed bg-no-repeat bg-cover min-h-screen w-full'
       aria-label='Space travel destinations' >
@@ -12,11 +13,7 @@ const Destination = () => {
         <main>
           <section className="flex justify-between items-baseline">
             <div>
-              {
-                destinations.filter(destination=>destination.name===currDestination).map((destination, index) => (
-                  <img key={index} src={destination.images.png} />
-                ))
-              }
+              <img src={selectedDestination.images.png} alt={selectedDestination.name} />
             </div>
             <div>
               <nav>
@@ -25,10 +22,7 @@ const Destination = () => {
                 <li onClick={()=>setCurrDestination("Europa")}>Europa</li>
                 <li  onClick={()=>setCurrDestination("Titan")}>Titan</li>
               </nav>
-              {
-                console.log(currDestination)
               
-              }
             </div>
           </section>
         </main>
