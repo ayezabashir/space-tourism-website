@@ -17,10 +17,10 @@ const Destination = () => {
             </div>
             <div className="mt-50 lg:mt-0 text-center lg:text-start max-w-460">
               <nav className="flex justify-between px-20 items-center mb-30 gap-10 font-barlow font-light text-lightblue">
-                <li className="list-none mx-5" onClick={() => setCurrDestination("Moon")}>Moon</li>
-                <li className="list-none mx-5" onClick={() => setCurrDestination("Mars")}>Mars</li>
-                <li className="list-none mx-5" onClick={() => setCurrDestination("Europa")}>Europa</li>
-                <li className="list-none mx-5" onClick={() => setCurrDestination("Titan")}>Titan</li>
+                <li className={`list-none mx-5 cursor-pointer ${currDestination === "Moon" ? "underline underline-offset-8 text-white" : "text-lightblue"}`} onClick={() => setCurrDestination("Moon")}>Moon</li>
+                <li className={`list-none mx-5 cursor-pointer ${currDestination === "Mars" ? "underline underline-offset-8 text-white" : "text-lightblue"}`} onClick={() => setCurrDestination("Mars")}>Mars</li>
+                <li className={`list-none mx-5 cursor-pointer ${currDestination === "Europa" ? "underline underline-offset-8 text-white" : "text-lightblue"}`} onClick={() => setCurrDestination("Europa")}>Europa</li>
+                <li className={`list-none mx-5 cursor-pointer ${currDestination === "Titan" ? "underline underline-offset-8 text-white" : "text-lightblue"}`} onClick={() => setCurrDestination("Titan")}>Titan</li>
               </nav>
               <div>
                 <h2 className="text-3xl">{selectedDestination.name}</h2>
