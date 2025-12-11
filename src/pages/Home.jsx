@@ -11,7 +11,7 @@ const Home = () => {
       className='bg-[url(/src/assets/home/background-home-mobile.jpg)] sm:bg-[url(/src/assets/home/background-home-tablet.jpg)] lg:bg-[url(/src/assets/home/background-home-desktop.jpg)] bg-fixed bg-no-repeat bg-cover min-h-screen w-full'
       aria-label="Space travel introduction section"
       >
-      <main className="container flex justify-center items-center lg:items-baseline-last max-w-1000">
+      <main className="container flex justify-center items-center lg:items-baseline-last max-w-1100">
         <section className="flex flex-col lg:flex-row lg:justify-between items-center text-lightblue w-full">
           <div className="mb-100 text-center lg:text-left">
             <h1 className="mb-20">
