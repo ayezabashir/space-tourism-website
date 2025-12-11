@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import Button from "../components/Button";
 
 const Home = () => {
   const nav = useNavigate();
@@ -26,11 +27,9 @@ const Home = () => {
             </p>
           </div>
           <div className="flex justify-center items-center">
-            <button className="bg-white hover:ring-70 ring-white/30 rounded-full w-144 h-144 md:w-272 md:h-272 text-lg md:text-2xl hover:text-lightblue cursor-pointer transition-all ease-in-out delay-75 font-bellefair text-darkblue"
-            onClick={handleNav}
-            >
+            <Button onClick={handleNav}>
               Explore
-            </button>
+            </Button>
           </div>
         </section>
       </main>
