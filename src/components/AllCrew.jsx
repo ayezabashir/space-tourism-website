@@ -1,5 +1,6 @@
 import { useState } from "react";
 import data from "/src/data/data.json";
+import Content from "./Content";
 const AllCrew = () => {
     const [currCrew, setCurrentCrew] = useState(0);
     const crews = data.crew;
@@ -7,11 +8,7 @@ const AllCrew = () => {
     return (
         <section className="flex flex-col xl:flex-row xl:h-600 justify-between gap-20 items-center">
             <div className="flex flex-col justify-between items-center xl:items-start xl:py-100 xl:w-1/2 h-full">
-                <div className="mb-50 text-center xl:text-start">
-                    <h1 className="font-bellefair text-[#8d8f93] text-md sm:text-xl ">{crew.role}</h1>
-                    <h2 className="font-bellefair text-xl sm:text-2xl">{crew.name}</h2>
-                    <p className="leading-relaxed my-20">{crew.bio}</p>
-                </div>
+                <Content mainhead={crew.role} subhead={crew.name} desc={crew.bio} />
                 <div className="flex gap-20 cursor-pointer">
                     {
                         crews.map((item, index) =>
