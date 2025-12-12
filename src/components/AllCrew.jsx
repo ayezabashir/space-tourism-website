@@ -1,6 +1,8 @@
 const AllCrew = () => {
   return (
-    <div>AllCrew</div>
+    <section>
+        all
+    </section>
   )
 }
 
