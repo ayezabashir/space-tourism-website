@@ -1,12 +1,13 @@
-import React from 'react'
+import HeroComponent from './HeroComponent'
+import AllCrew from './AllCrew'
 
 const CrewHero = () => {
   return (
-    <main className="container">
-        <div className='max-w-1100 mx-auto my-100'>
-
-        </div>
-    </main>
+    <>
+      <HeroComponent numb="02" heading=" Meet your crew">
+        <AllCrew />
+      </HeroComponent>
+    </>
   )
 }
 
