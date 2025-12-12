@@ -49,9 +49,9 @@
 
 @layer components{
   .container{
-    @apply max-w-1200 mx-auto min-h-screen p-24
+    @apply max-w-1200 mx-auto min-h-screen px-24 pt-30
   }
   .section{
-    @apply max-w-1100 mx-auto my-100
+    @apply max-w-1100 mx-auto
   }
 }
