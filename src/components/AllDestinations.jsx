@@ -7,7 +7,7 @@ const AllDestinations = () => {
     const selectedDestination = destinations.find(destination => destination.name === currDestination);
 
     return (
-        <section className="flex flex-col lg:flex-row justify-between items-center">
+        <section className="mt-50 flex flex-col lg:flex-row justify-between items-center">
             <div className="p-20 flex justify-start">
                 <img className="w-200 sm:w-400 lg:w-500" src={selectedDestination.images.png} alt={selectedDestination.name} />
             </div>
