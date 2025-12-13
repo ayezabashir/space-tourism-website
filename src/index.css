@@ -52,9 +52,23 @@
     @apply max-w-1200 mx-auto; 
   }
   .content{
-    @apply min-h-screen px-24 pt-200;
+    @apply min-h-screen px-24 pt-100 md:pt-150 xl:pt-200;
   }
   .section{
     @apply max-w-1100 mx-auto;
+  }
+  .animate-fadein{
+    animation: fadeIn 0.5s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from{
+    opacity:0;
+    transform: translateY(12px);
+  }  
+  to{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
