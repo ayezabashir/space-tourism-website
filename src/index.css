@@ -49,12 +49,12 @@
 
 @layer components{
   .container{
-    @apply max-w-1200 mx-auto 
+    @apply max-w-1200 mx-auto; 
   }
   .content{
-    @apply min-h-screen px-24 pt-30
+    @apply min-h-screen px-24 pt-200;
   }
   .section{
-    @apply max-w-1100 mx-auto
+    @apply max-w-1100 mx-auto;
   }
 }
