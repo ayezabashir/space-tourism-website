@@ -7,7 +7,7 @@ const HomeHero = () => {
         nav("/destination");
     }
     return (
-        <main className="container flex justify-center items-center lg:items-baseline-last max-w-1100">
+        <main className="container content flex justify-center items-center lg:items-baseline-last max-w-1100">
             <section className="flex flex-col lg:flex-row lg:justify-between items-center text-lightblue w-full">
                 <div className="mb-100 text-center lg:text-left">
                     <h1 className="mb-20">
