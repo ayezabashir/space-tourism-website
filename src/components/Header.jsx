@@ -10,12 +10,13 @@ const Header = () => {
     const nav = useNavigate();
     return (
         <header className='container z-10 fixed top-0 left-0 right-0'>
-            <nav className="mt-20 md:mt-0 flex justify-between items-center xl:py-30 pl-24">
+            <nav className="mt-20 md:mt-0 flex justify-between items-center xl:py-30 pl-50">
                 <picture onClick={() => nav("/")}>
                     <img className="w-30 md:w-50 cursor-pointer transform hover:rotate-180 duration-300 ease-in-out" src={logo} alt="" />
                 </picture>
-                <div className="hidden w-[90%] xl:w-[60%] h-100 md:flex justify-end  backdrop-blur-xl ">
-                    <div className="flex items-center justify-between gap-40 px-50 font-barlow font-light text-md">
+                <div className="hidden lg:block ml-20 h-0.5 w-500 xl:w-600 bg-lightblue"></div>
+                <div className="hidden w-[90%] xl:w-[60%] h-80 md:flex justify-end  backdrop-blur-xl ">
+                    <div className="flex items-center justify-between gap-40 px-20 xl:px-50 font-barlow font-light text-md">
                         <NavItems />
                     </div>
                 </div>

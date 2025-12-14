@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 const NavItems = () => {
-    const baseClass = "cursor-pointer transition-all ease-in-out underline-offset-8 hover:underline";
+    const baseClass = "cursor-pointer font-barlow-condensed text-lightblue text-sm transition-all ease-in-out underline-offset-10 md:underline-offset-30 uppercase hover:underline";
     return (
         <>
             <NavLink
@@ -10,7 +10,7 @@ const NavItems = () => {
                     `${baseClass} ${isActive ? "underline" : ""}`
                 }
             >
-                <span className='font-medium'>00</span> Home
+                <span className='font-medium text-white'>00</span> Home
             </NavLink>
             <NavLink
                 to="/destination"
@@ -18,7 +18,7 @@ const NavItems = () => {
                     `${baseClass} ${isActive ? "underline" : ""}`
                 }  
             >
-                <span className='font-medium'>01</span> Destination
+                <span className='font-medium text-white'>01</span> Destination
             </NavLink>
             <NavLink
                 to="/crew"
@@ -26,7 +26,7 @@ const NavItems = () => {
                     `${baseClass} ${isActive ? "underline":""}`
                 }
             >
-                <span className='font-medium'>02</span> Crew
+                <span className='font-medium text-white'>02</span> Crew
             </NavLink>
             <NavLink
                 to="/technology"
@@ -34,7 +34,7 @@ const NavItems = () => {
                     `${baseClass} ${isActive ? "underline":""}`
                 }
             >
-                <span className='font-medium'>03</span> Technology
+                <span className='font-medium text-white'>03</span> Technology
             </NavLink>
         </>
     )
